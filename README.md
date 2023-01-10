@@ -1,42 +1,18 @@
-# LWC Fundamentals
-Javascript-Fundamentals
-	https://github.com/ramsedu/Javascript-Fundamentals
+# Salesforce DX Project: Next Steps
 
-LWC-Fundamentals
+Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
 
-Salesforce CLI
-	https://developer.salesforce.com/tools/sfdxcli
-Salesforce CLI Update
-	sfdx update
-Salesforce CLI version
-	sfdx -v
-salesforce CLI Source code
-	https://github.com/forcedotcom/cli
-	https://github.com/salesforcecli/sfdx-cli
-	https://github.com/salesforcecli/sfdx-cli/releases
-	
-VS Code
-	https://code.visualstudio.com/download
-VS Code version
-	code -v
-VS Code Extension
-	Salesforce Extension Pack
-	Salesforce Extension Pack (Expanded)
-	Prettier - Code formatter
-	Apex PMD
-	GitLens — Git supercharged
-	Salesforce Documenter
-	Salesforce Package.xml Generator Extension for VS Code
-	Salesforce Snippets
+## How Do You Plan to Deploy Your Changes?
 
-Java SE Development Kit 8u341
-	https://www.oracle.com/in/java/technologies/javase/javase8u211-later-archive-downloads.html
-	https://www.oracle.com/in/java/technologies/downloads/#jdk19-windows
-	https://www.oracle.com/in/java/technologies/downloads/#jdk17-windows
-Java version
-	java -version
+Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
 
-Git
-	https://git-scm.com/downloads
-Git version
-	git -v
+## Configure Your Salesforce DX Project
+
+The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+
+## Read All About It
+
+- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
+- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
+- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
+- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
