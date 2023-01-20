@@ -1,2 +1,9 @@
 Create a new sfdx project
 sfdx force:project:create -n "sfdxLWCLearning"
+
+sfdx - command
+    force   - Topic
+    org     - subtopic*
+    create  - method
+    
+sfdx force:org:create -f config/project-scratch-def.json -a ramslwc66SO01 -d 30 --setdefaultusername
