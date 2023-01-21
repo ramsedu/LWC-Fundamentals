@@ -9,7 +9,10 @@
 .vscode/
 .localdevserver/
 deploy-options.json
-
+manifest/package.xml
+lwc/__tests__
+#force-app/main/default/lwc/*/__tests__/
+force-app/main/default/lwc/*/__tests__/
 # LWC VSCode autocomplete
 **/lwc/jsconfig.json
 

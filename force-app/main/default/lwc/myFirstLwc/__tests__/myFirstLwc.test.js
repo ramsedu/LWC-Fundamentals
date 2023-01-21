@@ -1,7 +1,7 @@
 import { createElement } from 'lwc';
 import MyFirstLwc from 'c/myFirstLwc';
 
-describe('c-my-first-lwc', () => {
+describe('c-my-first-lwc', () => { 
     afterEach(() => {
         // The jsdom instance is shared across test cases in a single file so reset the DOM
         while (document.body.firstChild) {
