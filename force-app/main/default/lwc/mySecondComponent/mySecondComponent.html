@@ -1,0 +1,27 @@
+<!--
+  @description       : 
+  @author            : Ramasamy Palanivel
+  @group             : 
+  @last modified on  : 01-21-2023
+  @last modified by  : Ramasamy Palanivel
+  Modifications Log
+  Ver   Date         Author               Modification
+  1.0   01-21-2023   Ramasamy Palanivel   Initial Version
+-->
+<template>
+    <lightning-card title="Welcome to LWC">
+        <div class="mywelcomeCSS">Hello {welcomemessage}</div>
+        <div style="background-color: black;color:white;">Inline styles </div>
+        <!-- Default/basic -->
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Enter" onchange={welcomeChange}></lightning-input>
+        </div>
+    </lightning-card>
+    <!-- <div> Welcome to LWC Lernings!!!</div> -->
+    <!-- <lightning-card variant="Narrow" title="Hello" icon-name="standard:opportunity">
+        <lightning-button-icon icon-name="utility:down" variant="border-filled" alternative-text="Show More"
+            slot="actions"></lightning-button-icon>
+        <p class="slds-p-horizontal_small">Card Body Narrow (custom component)</p>
+        <p slot="footer">Card Footer </p>
+    </lightning-card> -->
+</template>

@@ -1,0 +1,12 @@
+.mywelcomeCSS {
+    background-color: green;
+    color: aliceblue;
+}
+
+div {
+    border: 5px solid red;
+}
+
+:host {
+    border: 8px solid black;
+}
