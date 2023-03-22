@@ -1,0 +1,13 @@
+<!--
+  @description       : To Navigate record detail page in flow
+  @author            : Ramasamy Palanivel
+  @group             : Navigation
+  @last modified on  : 03-03-2023
+  @last modified by  : Ramasamy Palanivel
+  Modifications Log
+  Ver   Date         Author               Modification
+  1.0   03-03-2023   Ramasamy Palanivel   Initial Version
+-->
+<aura:component implements="force:lightningQuickAction,lightning:availableForFlowActions">
+  <aura:attribute name="recordId" type="String" />
+</aura:component>

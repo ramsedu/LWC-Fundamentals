@@ -1,0 +1,25 @@
+/**
+ * @description       : To Navigate record detail page in flow
+ * @author            : Ramasamy Palanivel
+ * @group             : Navigation
+ * @last modified on  : 03-03-2023
+ * @last modified by  : Ramasamy Palanivel
+ * Modifications Log
+ * Ver   Date         Author               Modification
+ * 1.0   03-03-2023   Ramasamy Palanivel   Initial Version
+**/
+({    invoke : function(component, event, helper) {
+    // Get the record ID attribute
+    var record = component.get("v.recordId");
+     
+    // Get the Lightning event that opens a record in a new tab
+    var redirect = $A.get("e.force:navigateToSObject");
+     
+    // Pass the record ID to the event
+    redirect.setParams({
+       "recordId": record
+    });
+          
+    // Open the record
+    redirect.fire(); 
+ }})
