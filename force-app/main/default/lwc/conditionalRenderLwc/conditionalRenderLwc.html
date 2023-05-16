@@ -1,0 +1,64 @@
+<!--
+  @description       : 
+  @author            : Ramasamy Palanivel
+  @group             : 
+  @last modified on  : 04-22-2023
+  @last modified by  : Ramasamy Palanivel
+  Modifications Log
+  Ver   Date         Author               Modification
+  1.0   04-08-2023   Ramasamy Palanivel   Initial Version
+-->
+<template>
+    <lightning-input type="checkbox" label="Show Div" onchange={showDivHandler}></lightning-input>
+
+    <template if:true={isDisplayDiv}>
+        <div> This is LWC Session!!!</div>
+    </template>
+    <div> CheckBox is {isSlected}</div>
+    <template lwc:if={isDisplayDiv}>
+        This is template one.
+    </template>
+    <template lwc:else>
+        This is template two.
+    </template>
+
+    <h1>Blow city are displayed by For Each</h1>
+    <template for:each={cityList} for:item="city">
+        <p key={city}>{city}</p>
+    </template>
+
+
+    <!--     <h1>Blow city are displayed by Iterator</h1>
+    <template iterator:it={cityList}>
+        <p key={it.value}>{it.value}</p>
+    </template> -->
+
+    <h1>Blow city are displayed by Iterator</h1>
+    <template iterator:it={cityList}>
+        <p key={it.value}>{it.value}</p>
+    </template>
+
+    <ul class="slds-m-around_medium">
+        <template iterator:it={cityList}>
+            <li key={it.value}>
+                <div lwc:if={it.first} class="list-first">This is first record</div>
+                {it.value}
+                <div lwc:if={it.last} class="list-last">This is last record</div>
+            </li>
+        </template>
+    </ul>
+
+    <lightning-card title="HelloIterator" icon-name="custom:custom14">
+        <ul class="slds-m-around_medium">
+            <template iterator:it={cityList}>
+                <li key={it.value}>
+                    <div lwc:if={it.first} class="list-first">This is first record</div>
+                    {it.value}
+                    <div lwc:if={it.last} class="list-last">This is last record</div>
+                </li>
+            </template>
+        </ul>
+    </lightning-card>
+
+
+</template>
